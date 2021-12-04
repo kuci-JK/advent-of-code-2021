@@ -6,9 +6,7 @@ import java.security.MessageDigest
  * Reads lines from the given input txt file.
  */
 fun readInput(name: String) = File("src/puzzle-inputs", "$name.txt").readLines()
-/**
- * Reads lines from the given input txt file.
- */
+
 fun readInputBinaryNumbers(name: String) = File("src/puzzle-inputs", "$name.txt").readLines().map { input ->
     input.map {
         it.digitToInt()
